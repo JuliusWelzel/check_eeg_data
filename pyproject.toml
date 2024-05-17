@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "check-eeg-data"
+version = "0.1.0"
+description = "Make validation of pilot data"
+authors = ["Julius Welzel <julius.welzel@gmail.com>"]
+license = "OSF"
+readme = "README.md"
+packages = [
+    { include = "src"}
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+mne = "^1.7.0"
+pybids = "^0.16.4"
+pandas = "^2.2.2"
+ipykernel = "^6.29.4"
+pyxdf = "^1.16.6"
+mnelab = "^0.9.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
